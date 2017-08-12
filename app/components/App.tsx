@@ -3,7 +3,9 @@ import { HashRouter } from 'react-router-dom';
 import Routes from '../config/routes';
 import Header from 'components/Header';
 
-export default class AppShell extends React.Component<any, any> {
+import '../style/global.scss';
+
+export default class App extends React.Component<any, any> {
 
 	constructor(props) {
 		super();
