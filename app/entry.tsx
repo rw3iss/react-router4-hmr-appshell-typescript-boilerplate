@@ -8,7 +8,7 @@ ReactDOM.render(
   <AppContainer>
     <App/>
   </AppContainer>,
-  document.getElementById('root')
+  document.body
 );
 
 // Hot Module Replacement API 
@@ -21,7 +21,7 @@ if (module.hot) {
 	  <AppContainer>
 	    <App/>
 	  </AppContainer>,
-      document.getElementById('root')
+      document.body
     );
   });
 }

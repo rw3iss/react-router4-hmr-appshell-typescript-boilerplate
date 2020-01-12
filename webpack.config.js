@@ -1,23 +1,24 @@
-var webpack = require('webpack');
-var path = require('path');
+const webpack = require('webpack');
+const path = require('path');
 const ExtractTextPlugin = require("extract-text-webpack-plugin");
 
 const extractSass = new ExtractTextPlugin({
-    filename: "[name].css", // "[name].[contenthash].css",
-    disable: process.env.NODE_ENV === "development",
-    allChunks: true
+    filename: "[name].css",
+    disable: process.env.NODE_ENV === "development"
 });
 
-var BUILD_DIR = path.resolve(__dirname, 'build');
-var APP_DIR = path.resolve(__dirname, 'app');
+const BUILD_DIR = path.resolve(__dirname, 'build');
+const APP_DIR = path.resolve(__dirname, 'app');
 
-var config = {
+const config = {
+    
+    mode: 'development',
+    
     entry: {
         app: [
             'webpack-dev-server/client?http://localhost:3000',
             'webpack/hot/dev-server',
-            //'react-hot-loader/patch',
-            APP_DIR + '/entry.tsx'
+            APP_DIR + '/client.ts'
         ] 
     },
 

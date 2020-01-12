@@ -1,0 +1,12 @@
+{
+  "editor.formatOnSave": true,
+  "eslint.run": "onSave",
+  "eslint.enable": true,
+  "editor.codeActionsOnSave": {
+    "source.fixAll.eslint": true
+  },
+  "files.exclude": {
+    "package-lock.json": true,
+    ".gitignore": true
+  }
+}

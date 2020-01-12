@@ -8,7 +8,7 @@ import '../style/global.scss';
 export default class App extends React.Component<any, any> {
 
 	constructor(props) {
-		super();
+		super(props);
 	}
 
 	render() {
